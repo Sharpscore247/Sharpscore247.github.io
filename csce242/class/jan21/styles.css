@@ -1,0 +1,23 @@
+body{
+    background:lightblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div {
+    background:skyblue;
+    padding:20px;
+    width:75%;
+    margin:auto; /*center horizontally */
+}
+
+h1 {
+    color:darkolivegreen;
+}
+
+li {
+    list-style-type: none;
+}
+
+td {
+    border:1px solid gray;
+}
