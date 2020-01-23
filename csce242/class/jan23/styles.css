@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/cows-bg.jpg);
+}
+
+div{
+    background:rgba(255,255,255, 0.6);
+    padding:10 px;
+    width:75%;
+    margin:auto;
+    border-radius:5px;
+    box-shadow: 5 px 10 px lightblue;
+}
+#main-nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: red;
+}
+/*
+#main-nav a {
+    background: white;
+    color:black;
+    text-decoration: none;
+    padding:10px;
+}
+#main-nav a:hover {
+    background:white;
+    color: black;
+}
+*/
+#main-nav a {
+    text-decoration: none;
+    font-size:20px;
+    padding:5px 0;
+    color:#342c28;
+    border-bottom: 2px solid transparent;
+}
+#main-nav a:hover {
+    border-bottom:2px solid #c6413a;
+}
+
+#bull, #dumbCow {
+    border: 5px solid transparent;
+}
+#bull:hover {
+    border:5px solid red;
+}
+#dumbCow:hover {
+    border:5px solid blue;
+}
