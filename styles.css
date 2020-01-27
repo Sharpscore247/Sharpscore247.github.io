@@ -1,10 +1,27 @@
-head {
-    color:white;
+h1 {
+    color:lightskyblue;
 }
 body {
-    background:rgb(134, 242, 251);
+    background: url(images/starrysky.gif);
+    font-size:20px;
     font-family: Helvetica, Impact, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow:1px;
 }
-p {
-    color: black;
+#mainBody {
+    margin:auto;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+#inClassList a, #assignmentList a {
+    
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size:20px;
+    color:lightblue;
+}
+#inClassList a:hover, #assignmentList a:hover {
+    text-decoration: underline;
+    color: red;
 }
