@@ -1,3 +1,27 @@
 h1 {
-    color: red;
+    color:black;
+}
+body {
+    font-size:20px;
+    font-family: Helvetica, Impact, 'Arial Narrow Bold', sans-serif;
+    background-color: skyblue;
+}
+div {
+
+}
+#navBar, ul {
+    list-style-type: none;
+}
+#navBar a {
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size:20px;
+    color:black;
+}
+#navBar a:hover, a:active {
+    text-decoration: underline;
+    color:white;
+}
+#waterTable, th, td{
+    border: 1px solid black;
 }
