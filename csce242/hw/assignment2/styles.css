@@ -25,3 +25,9 @@ div {
 #waterTable, th, td{
     border: 1px solid black;
 }
+img {
+    border: 3px solid transparent;
+}
+img:hover {
+    border: 3px solid blue;
+}
