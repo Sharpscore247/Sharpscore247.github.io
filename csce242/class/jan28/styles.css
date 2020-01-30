@@ -17,7 +17,7 @@ p {
     padding: 10px;
     display:flex;
     justify-content: space-between;
-    /*align-items: stretch;*/
+    align-items: stretch;
 }
 #main-content h1 {
     text-align: center;
