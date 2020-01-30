@@ -1,0 +1,42 @@
+/* styles for everything */
+* {
+    font-family: sans-serif;
+}
+body {
+    color: purple;
+}
+p {
+    color: blue;
+}
+#main-header {
+    background: lightgrey;
+    padding: 10px;
+}
+#main-content {
+    background: lightgrey;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    /*align-items: stretch;*/
+}
+#main-content h1 {
+    text-align: center;
+}
+#main-footer {
+    background: lightgrey;
+    padding: 10px;
+}
+.col1of3 {
+    background: lightgreen;
+    padding:10px;
+    flex-basis: 30%;
+}
+#specialCol {
+    background: blue;
+}
+.firstCol {
+    background: lightblue;
+}
+.col1of3 h2 {
+    color: red;
+}
