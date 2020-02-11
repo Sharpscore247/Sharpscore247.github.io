@@ -20,14 +20,42 @@ body {
     
 }
 
-#inClassList a, #assignmentList a {
-    
+#inClassList {
+    justify-content: center;
+    align-items: center;
+}
+
+#inClassList a {
     text-decoration: none;
     text-decoration-style: none;
     font-size:20px;
     color:lightblue;
+
 }
-#inClassList a:hover, #assignmentList a:hover {
+#inClassList a:hover {
     text-decoration: underline;
     color: red;
+}
+.assignment-holder {
+    text-align: center;
+    margin: auto;
+}
+
+.assignment-holder .assignment {
+    background-color: rgba(135, 206, 250, 0.308);
+    margin: auto;
+}
+
+.assignment h3 a {
+    text-decoration-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.assignment a:hover {
+    color:skyblue;
+}
+
+@media(min-width: 900px) {
+    
 }

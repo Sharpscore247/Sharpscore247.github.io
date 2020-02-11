@@ -1,24 +1,25 @@
 body {
-    background: lightblue;
+    font-family:Arial, Helvetica, sans-serif;
+    background:slategray;
 }
 
 .example {
-    background: white;
-    flex: 1;
+    background:white;
     padding:10px;
-    margin: 10px;
-    border-radius: 5px;
-}
-.example h1 {
-    text-align: center;
+    margin:10px;
+    border-radius:5px;
+    flex:1;
 }
 
+.example h1 {
+    text-align:center;
+}
 
 .example label {
-    width:px;
+    width:100%;
+    text-align:center;
     display:block;
-    text-align: center;
-    padding: 5px;
+    padding:5px;
 }
 
 .example input {
@@ -27,22 +28,64 @@ body {
     padding:5px;
 }
 
-.example input:focus{
-    background: skyblue;
-    color:red;
-}
-.example button {
-    width: 100%;
-    display: block;
-    margin: auto;
-    padding: 5px;
+.example input:focus {
+    background:skyblue;
+    color:magenta;
 }
 
-@media(min-width: 900px) {
-    #cols {
-        display: flex;
+.example button {
+    width:100%;
+    padding:5px;
+}
+#emotion-display {
+    color: green;
+}
+
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: yellow;
+}
+.blue {
+    color: blue;
+}
+.emmotion {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.hidden {
+    display: none;
+}
+
+@media(min-width:900px){
+    #content {
+        display:flex;
     }
+
     .example p {
-        display: flex;
+        display:flex;
+    }
+
+    .example label {
+        width:100px;
+        text-align:right;
+        padding-right:5px;
+    }
+
+    .example input {
+        width:50%;
+    }
+
+    .example button {
+        width:50%;
+        display:block;
+        margin:auto;
     }
 }
