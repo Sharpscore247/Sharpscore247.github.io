@@ -1,5 +1,11 @@
+
 h1 {
     color:lightskyblue;
+    text-align: center;
+}
+h2 {
+    color: lightskyblue;
+    text-align: center;
 }
 body {
     background: url(images/starrysky.gif);
