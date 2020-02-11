@@ -39,6 +39,7 @@ body {
 .assignment-holder {
     text-align: center;
     margin: auto;
+    background: rgba(0, 0, 0, 0.212);
 }
 
 .assignment-holder .assignment {
@@ -57,5 +58,23 @@ body {
 }
 
 @media(min-width: 900px) {
-    
+    .assignment-holder {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .assignment {
+        justify-content: space-evenly;
+        flex: 1/4;
+        display: inline-block;
+        padding: 10px 10px;
+        margin:0 5px;
+    }
+
+    .list #inClassList{
+        text-align: center;
+        list-style-position: inside;
+    }
 }
