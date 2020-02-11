@@ -1,0 +1,48 @@
+body {
+    background: lightblue;
+}
+
+.example {
+    background: white;
+    flex: 1;
+    padding:10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.example h1 {
+    text-align: center;
+}
+
+
+.example label {
+    width:px;
+    display:block;
+    text-align: center;
+    padding: 5px;
+}
+
+.example input {
+    width:100%;
+    display:block;
+    padding:5px;
+}
+
+.example input:focus{
+    background: skyblue;
+    color:red;
+}
+.example button {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+@media(min-width: 900px) {
+    #cols {
+        display: flex;
+    }
+    .example p {
+        display: flex;
+    }
+}
