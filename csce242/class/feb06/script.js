@@ -11,32 +11,20 @@ function displayEmotion() {
     */
     
     let displayP = document.getElementById("ex1-result");
-    displayP.innerHTML = `Welcome ${firstName}  <br>you are ${emotion} today`;
-
-    
-    displayEmotion = document.getElementById("emotion-display").innerHTML;
-    displayEmotion =`${getEmoji(emotion)}`
-    displayEmotion.classList.add(favColor.toLowerCase());
-    
+    displayP.innerHTML = `${firstName} your fav color is ${favColor}`;
 }
-function getEmoji(emotion) {
-    const emoCI = emotion.toLowerCase();
 
-    if(emoCI=="happy") {
-        return ":)"
-    }
-    else if(emoCI=="sad") {
-        return ":("
-    }
-    else if(emoCI=="angry") {
-        return ">:|"
-    }
-    else if(emoCI=="Silly") {
-        return ":P"
-    }
-    else {
-        return "";
-    }
+function displaySong() {
+    const song = document.getElementById("txt-song").value;
+    const artist = document.getElementById("txt-artist").value;
+
+    let displayP = document.getElementById("ex2-result");
+
+    displayP.innerHTML = `${song} is a song by ${artist}`;
 }
+
 const btnDisplay = document.getElementById("btn-display");
+const btnDisplay2 = document.getElementById("btn-display-2");
+
 btnDisplay.onclick = displayEmotion;
+btnDisplay2.onclick = displaySong;

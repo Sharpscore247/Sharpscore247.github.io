@@ -1,3 +1,4 @@
+  
 body {
     font-family:Arial, Helvetica, sans-serif;
     background:slategray;
@@ -36,32 +37,6 @@ body {
 .example button {
     width:100%;
     padding:5px;
-}
-#emotion-display {
-    color: green;
-}
-
-.green {
-    color: green;
-}
-.red {
-    color: red;
-}
-.yellow {
-    color: yellow;
-}
-.blue {
-    color: blue;
-}
-.emmotion {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-
-}
-
-.hidden {
-    display: none;
 }
 
 @media(min-width:900px){

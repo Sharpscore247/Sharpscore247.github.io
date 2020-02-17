@@ -1,0 +1,143 @@
+#main-content {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-header {
+    background-color: #F2AD94;
+    color: rgb(73, 70, 70);
+    text-align: center;
+    display: block;
+    padding: 10px;
+
+}
+
+/* Nav Stuff */
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color:black;
+    margin:6px 0;
+}
+#nav-items {
+    color: orangered;
+    list-style: none;
+    text-decoration: none;
+}
+#nav-items li {
+    background: whitesmoke;
+    padding:10px;
+    margin:3px;
+    border-bottom: 3px transparent;
+    text-align: center;
+}
+
+#nav-items a {
+    text-decoration: none;
+    color: orangered;
+}
+
+#nav-items li:hover {
+    text-decoration: underline orangered;
+}
+
+/* Part one */
+
+.part {
+    background: #F2AD94;
+    margin: 10px;
+    padding: 5px;
+}
+#part1-head {
+    padding: 5px;
+}
+#data {
+    padding: 10px;
+    margin: auto;
+
+}
+#data p {
+    display: flex;
+}
+#data label {
+    width:85px;
+    text-align:right;
+    padding-right: 10px;
+    
+}
+#data input {
+    width:20%;
+}
+#calculate {
+    margin-left: 5px;
+}
+
+/* Part 2 */
+
+#output-wrapper {
+    text-align: center;
+}
+#funds-output {
+    display: inline-block;
+}
+
+.none {
+    width: 100px;
+    height: 500px;
+    background: white;
+}
+.fourth {
+    width: 100px;
+    height: 500px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(137,8,8,1) 25%, rgba(121,9,9,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+
+.half {
+    width: 100px;
+    height: 500px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(121,9,9,1) 25%, rgba(137,8,8,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.three-fourths {
+    width: 100px;
+    height: 500px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+
+}
+
+.full {
+    width: 100px;
+    height: 500px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+/* Toggled Classes */
+.hidden {
+    display: none;
+}
+
+.grad {
+    width:50px;
+    height: 300px;
+    border:1px solid black;
+    background: linear-gradient(0deg, rgba(249,13,3,0) 0%, rgba(249,13,3,0) 0%, white 100%);
+}
+
+/* Resize for larger Screens */
+
+@media(min-width:900px) {
+    #nav-items {
+        display: flex;
+    }
+    #nav-items li {
+        flex: 1;
+        margin: 3px;
+    }
+    #nav-toggle {
+        display: none;
+    }
+
+}

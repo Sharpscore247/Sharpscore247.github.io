@@ -1,4 +1,3 @@
-
 h1 {
     color:lightskyblue;
     text-align: center;
@@ -44,7 +43,7 @@ body {
 
 .assignment-holder .assignment {
     background-color: rgba(135, 206, 250, 0.308);
-    margin: auto;
+    
 }
 
 .assignment h3 a {
@@ -60,17 +59,15 @@ body {
 @media(min-width: 900px) {
     .assignment-holder {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 15px;
+        margin: auto;
         padding: 10px;
     }
 
     .assignment {
-        justify-content: space-evenly;
-        flex: 1/4;
-        display: inline-block;
-        padding: 10px 10px;
-        margin:0 5px;
+        flex: 33%;
+       margin: 10px;
     }
 
     .list #inClassList{
