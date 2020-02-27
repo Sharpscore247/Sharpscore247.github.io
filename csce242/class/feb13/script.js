@@ -33,6 +33,16 @@ function isBlank(data, errorSpanId){
     return false;
 }
 
+function isNaN(data, errorSpanId){
+    if(data.trim() == NaN) {
+        let errorSpan = document.getElementById(errorSpanId);
+        errorSpan.classList.remove("hidden");
+        return true;
+    }
+
+    return false;
+}
+
 function getEmoji(emotion){
     const emoCI = emotion.toLowerCase();
 
@@ -53,6 +63,25 @@ function getEmoji(emotion){
     return "";
 }
 
+function count() {
+    let start = parseInt(document.getElementById("start-num").value);
+    let end = parseInt(document.getElementById("end-num").value);
+    let output = document.getElementById("go-output");
+    output.innerHTML += `Counting from ${start} to ${end}<br> <li><a>${start}</a></li>`
+    let i;
+
+    if(isNaN(start, "error-start") || isNaN(start, "error-start")) {
+        
+    }
+
+
+
+
+    for(i=start; i<end; i++) {
+        output.innerHTML += `<br> <li><a>${i1}</a></li>`
+    }
+}
+
 function toggleNav(){
     let navItems = document.getElementById("main-nav-items");
     navItems.classList.toggle("hidden");
@@ -63,3 +92,5 @@ btnDisplay.onclick = displayEmotion;
 
 const navToggle = document.getElementById("nav-toggle");
 navToggle.onclick = toggleNav;
+const btnCount = document.getElementById("btn-go");
+btnCount.onclick = count;

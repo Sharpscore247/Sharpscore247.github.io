@@ -1,0 +1,67 @@
+body {
+    background: rgb(18, 18, 19);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    display: flex;
+}
+
+#running-man {
+    background: #3399FF;
+    flex: 1;
+    margin: 5px;
+    margin-top: 20%;
+    height: 30%;
+    
+    border-radius: 5px;
+}
+
+#running-man h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+#man {
+    --margin-L: 0px;
+    margin-left: var(--margin-L);
+    width: 125px;
+    height: 150px;
+}
+
+#funds {
+    background: #3399FF;
+    border-radius: 5px;
+    flex: 1;
+    margin: 10px;
+    margin-left: 20px;
+    height: 100%;
+    padding-bottom: 25px;
+}
+#funds h1 {
+    text-align: center;
+    margin: 5px;
+}
+#funds h2 {
+    margin: 5px;
+    margin-bottom: 10px;
+}
+#funds input {
+    margin: 5px;
+}
+#funds label {
+    margin: 5px;
+}
+
+#btn-display {
+    margin: 5px;
+}
+#bar {
+    --percentage: 0%;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) var(--percentage), rgba(255,255,255,1) var(--percentage), rgba(255,255,255,1) 100%);
+    margin: auto;
+    margin-top: 30px;
+    width: 75px;
+    height: 400px;
+}
