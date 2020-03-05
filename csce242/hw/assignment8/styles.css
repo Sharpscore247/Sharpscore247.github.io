@@ -1,0 +1,71 @@
+body {
+    background: rgb(18, 18, 19);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    display: flex;
+}
+
+#quotes-div {
+    background: #3399FF;
+    flex: 1;
+    margin: 5px;
+    height: 300px;
+    margin-top: 12%;
+    border-radius: 5px;
+}
+
+#quotes-div h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+#rainbow-div {
+    background: #3399FF;
+    border-radius: 5px;
+    margin-top:12%;
+    height:300px;
+    flex: 1;
+}
+#rainbow-div h1 {
+    text-align: center;
+    margin: 5px;
+}
+#btn-draw {
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom:5px;
+}
+#rainbow-div label {
+    margin: 5px;
+}
+#rainbow-div p {
+    height:30px;
+    margin:0px;
+}
+
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.violet {
+    background-color: purple;
+}
+
+.gold {
+    float: right;
+    width:50px;
+    height:50px;
+}
