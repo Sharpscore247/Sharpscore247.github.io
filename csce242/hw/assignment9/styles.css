@@ -1,3 +1,49 @@
-h1 {
-    color:red;
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+#main-content {
+    background: #3399FF;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#main-content h1 {
+    text-align: center;
+    
+}
+
+#toys {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toy {
+    margin: 5px;
+    text-align: center;
+}
+.container {
+    position: relative;
+}
+.container:hover .overlay {
+    opacity: .75;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95%;
+    width: 95%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+  }

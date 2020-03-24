@@ -7,7 +7,7 @@ class Child {
         this.lastName = lastName;
         this.grade = grade;
     }
-
+ 
     populateTable(table){
         let tRow = table.insertRow();
         let tCol1 = tRow.insertCell();
