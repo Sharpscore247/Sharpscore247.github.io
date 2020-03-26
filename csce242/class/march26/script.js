@@ -30,7 +30,7 @@ function getBreweryItem(brewery){
 
     return brewerySection;
 }
-
+ 
 function getBreweryAddress(brewery){
     let pAddress = document.createElement("p");
     pAddress.innerHTML += `${brewery.street}<br> ${brewery.city}, ${brewery.state}<br> ${brewery.country} ${brewery.postal_code}`;

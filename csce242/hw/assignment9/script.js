@@ -30,7 +30,7 @@ class Toy {
 
         div.append(container);
     }
-
+ 
     
 }
 window.onload = function(){
