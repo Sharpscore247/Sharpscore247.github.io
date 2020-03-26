@@ -27,7 +27,6 @@ function getBreweryItem(brewery){
     brewerySection.append(pType);
 
     brewerySection.append(getBreweryAddress(brewery));
-
     return brewerySection;
 }
  
