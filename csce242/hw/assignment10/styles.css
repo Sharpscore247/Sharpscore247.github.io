@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    background: #3399FF;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#main-content h1 {
+    text-align: center;
+    
+}
+
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.movie {
+    display: flex;
+    background: #2778C7;
+    padding: 10px;
+    margin: 10px;
+    width: 1200px;
+    box-shadow: 7px 7px #143C64;
+}
+.data {
+    padding: 10px;
+    margin: 10px;
+}
+.imageDiv {
+    transition: transform .5s;
+    background: #143C64;
+    padding: 5px;
+}
+
+.imageDiv:hover {
+    transform: scale(1.5);
+}
+
+img {
+    
+    padding: 5px;
+    height: 250px;
+    width: 250px;
+}
