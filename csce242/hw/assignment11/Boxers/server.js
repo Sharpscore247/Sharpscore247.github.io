@@ -6,7 +6,7 @@ app.get('/', (req,res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get('/api/boxers', (req,res)=>{
+app.get('/api/boxers', (req,res)=>{ 
     boxers = [];
     boxers[0]={
         img:"images/Ali.jpg",
