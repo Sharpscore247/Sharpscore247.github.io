@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="main-content">
+            <h1>Cats with great names that I've heard of</h1>
+           
+            <div id="cats"></div>
+
+            <div id="cat-forms">
+                <div id="cat-info" class="cat-form">
+                    <h2>Cats and the things about them</h2>
+                    <span id="cat-id" class="hidden"></span>
+                    <p>
+                        <label for="txt-name">Name: </label>
+                        <input id="txt-name">
+                    </p>
+                    <p>
+                        <label for="txt-color">Color: </label>
+                        <input id="txt-color">
+                    </p>
+                    <p>
+                        <label for="txt-age">Age: </label>
+                        <input id="txt-age">
+                    </p>
+                    <button id="btn-edit-cat">Edit Cat</button>
+                    <button id="btn-delete-cat">Delete Cat (but only if you have to, they do so much)</button>
+                    </div>
+
+                <div id="add-cat" class="cat-form">
+                    <h2>Add a Cat of your own</h2>
+                    <p>
+                        <label for="txt-add-name">Name: </label>
+                        <input id="txt-add-name">
+                    </p>
+                    <p>
+                        <label for="txt-add-color">Color: </label>
+                        <input id="txt-add-color">
+                    </p>
+                    <p>
+                        <label for="txt-add-age">Age: </label>
+                        <input id="txt-add-age">
+                    </p>
+                    <button id="btn-add-cat">Add Cat!</button>
+                </div>
+            </div>
+            <h1 id="message"></h1>
+        </div>
+    </body>
+</html>

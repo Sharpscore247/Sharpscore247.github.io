@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+#main-content {
+    background: black;
+    color: white;
+}
+
+#main-content h1 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+h2 {
+    color: skyblue;
+}
+.hidden {
+    display: none;
+}
+
+#cats {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cat {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+}
+
+.cat a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+#cat-forms {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#message {
+    color: red;
+    text-align: center;
+}
