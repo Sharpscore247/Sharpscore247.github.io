@@ -1,13 +1,15 @@
 async function displayPeople(){
     let response = await fetch('api/people/');
+    
     let peopleJSON = await response.json();
     let peopleDiv = document.getElementById("people");
     peopleDiv.innerHTML = "";
-
+    
     for(i in peopleJSON){
         let person = peopleJSON[i];
         peopleDiv.append(getPerson(person));
     }
+    
 }
 
 function getPerson(person){
@@ -42,14 +44,21 @@ async function showPersonDetails(){
     document.getElementById("txt-height").value = person.height;
     document.getElementById("txt-coffee-order").value = person.coffeeOrder;
     document.getElementById("txt-hobbies").value = person.hobbies;
+    //for (hobby in person.hobbies) {
+    //    document.getElementById("txt-hobbies").innerHTML += `${hobby} `;
+    //}
     document.getElementById("txt-description").value = person.description;
 }
 
 async function addPerson(){
     let personName = document.getElementById("txt-add-name").value;
+    let personAge = document.getElementById("txt-add-age").value;
+    let personHeight = document.getElementById("txt-add-height").value;
+    let personCoffeeOrder = document.getElementById("txt-add-coffee-order").value;
+    let personHobbies = document.getElementById("txt-add-hobbies").value;
     let personDescription = document.getElementById("txt-add-description").value;
 
-    let person = {"name":personName, "description": personDescription};
+    let person = {"name":personName, "age":personAge, "height":personHeight, "coffeeOrder":personCoffeeOrder, "hobbies":personHobbies,"description": personDescription};
     
     let response = await fetch('/api/people',{
         method:"POST",
@@ -98,7 +107,7 @@ async function editPerson(){
 
 async function deletePerson(){
     let personId = document.getElementById("person-id").textContent;
-    
+    console.log(personId)
     let response = await fetch(`/api/people/${personId}`,{
         method:"DELETE",
         headers:{

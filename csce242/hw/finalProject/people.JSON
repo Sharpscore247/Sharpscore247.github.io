@@ -4,7 +4,11 @@
         "age": 37,
         "height": 45,
         "coffeeOrder": "Black",
-        "hobbies": ["having a white van", "eating pickles", "looking for pennies in sewer drains"],
+        "hobbies": [
+            "having a white van",
+            "eating pickles",
+            "looking for pennies in sewer drains"
+        ],
         "description": "This guy wears sunglasses indoors regardless of the light level in the room"
     },
     {
@@ -12,7 +16,11 @@
         "age": 22,
         "height": 64,
         "coffeeOrder": "Chai latte",
-        "hobbies": ["Playing the iolin", "Making friends", "Talking to neighbors"],
+        "hobbies": [
+            "Playing the iolin",
+            "Making friends",
+            "Talking to neighbors"
+        ],
         "description": "A fun loving girl that talks with you for slightly too long after you had planned to leave"
     },
     {
@@ -20,7 +28,11 @@
         "age": 50,
         "height": 168,
         "coffeeOrder": "Square",
-        "hobbies": ["Posting shade on twitter", "Making millions of dollars a year", "new advertising tactics"],
+        "hobbies": [
+            "Posting shade on twitter",
+            "Making millions of dollars a year",
+            "new advertising tactics"
+        ],
         "description": "Wendy's is an American international fast food restaurant chain founded by Dave Thomas on November 15, 1969, in Columbus, Ohio."
     },
     {
@@ -28,7 +40,12 @@
         "age": 3141592659,
         "height": 1,
         "coffeeOrder": "♋︎●︎●︎ ⧫︎♒︎♋︎⧫︎ ♋︎❍︎♏︎❒︎♓︎♍︎♋︎■︎⬧︎ ♍︎♋︎■︎ ♍︎□︎■︎⬧︎◆︎❍︎♏︎",
-        "hobbies": ["greg", "grEG", "gREG", "GREG"],
+        "hobbies": [
+            "greg",
+            "grEG",
+            "gREG",
+            "GREG"
+        ],
         "description": "GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREG GREGGREG GREG"
     }
 ]

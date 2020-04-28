@@ -25,8 +25,8 @@ app.get('/', (req,res)=>{
 });
 
 app.get('/api/people', (req,res)=>{
-    //getPeople(res);
-    res.send("/people.JSON")
+    getPeople(res);
+    //res.send("/people.JSON")
 });
 
 async function getPeople(res){
@@ -50,6 +50,7 @@ app.post('/api/people', (req,res)=>{
     
     if(result.error){
         res.status(400).send(result.error.details[0].message);
+        console.log("this is the problem")
         return;
     }
     
@@ -67,18 +68,19 @@ app.post('/api/people', (req,res)=>{
 
 async function createPerson(person, res){
     const result = await person.save();
+    console.log("this is the problem 2")
     console.log(result);
     res.send(person);
 }
 
 app.put('/api/people/:id',(req,res)=>{
-    const result = validatePerson(req.body);
+    //const result = validatePerson(req.body);
 
-    if(result.error){
-        res.status(400).send(result.error.details[0].message);
-        return;
-    }
-
+    //if(result.error){
+        //res.status(400).send(result.error.details[0].message);
+        //return;
+    //}
+    console.log("it gets here")
     updatePerson(res, req.params.id, req.body.name, req.body.age, req.body.height, req.body.coffeeOrder, req.body.hobbies, req.body.description);
 });
 
