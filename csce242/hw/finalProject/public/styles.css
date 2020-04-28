@@ -10,9 +10,52 @@ body {
 }
 
 #main-head {
+    text-align: center;
+    background: black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#people {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
     
+}
+.person {
+    margin: 5px;
+    padding: 5px;
+    background: black;
+    flex: 1;
+}
+
+#forms {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.form {
+    margin: 5px;
+    padding: 5px;
+    background: black;
+}
+.form label{
+    display: inline-block;
+    width: 130px;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+}
+.form input{
+    margin: 5px;
+    padding: 5px;
 }
 
 .hidden {
     display: none;
 }
+

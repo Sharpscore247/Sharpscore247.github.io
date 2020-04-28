@@ -46,13 +46,13 @@ async function getPerson(id, res){
 }
 
 app.post('/api/people', (req,res)=>{
-    const result = validatePerson(req.body);
+    //const result = validatePerson(req.body);
     
-    if(result.error){
-        res.status(400).send(result.error.details[0].message);
-        console.log("this is the problem")
-        return;
-    }
+    //if(result.error){
+      //  res.status(400).send(result.error.details[0].message);
+      //  console.log("this is the problem")
+      //  return;
+    //}
     
     const person = new Person({
         name:req.body.name,

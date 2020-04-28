@@ -19,15 +19,16 @@ function getPerson(person){
     let aTitle = document.createElement("a");
     aTitle.setAttribute("data-id", person._id);
     aTitle.onclick = showPersonDetails;
-    let h3Elem = document.createElement("h3");
-    h3Elem.textContent = person.name;
-    aTitle.append(h3Elem);
+    let h2Elem = document.createElement("h2");
+    h2Elem.textContent = person.name;
+    aTitle.append(h2Elem);
     personSection.append(aTitle);
 
     return personSection;
 }
 
 async function showPersonDetails(){
+    showForms();
     let id = this.getAttribute("data-id");
     let response = await fetch(`/api/people/${id}`);
 
@@ -124,11 +125,23 @@ async function deletePerson(){
     displayPeople();
 }
 
+function showForms() {
+    document.getElementById("person-details").classList.remove("hidden");
+}
+
+function showAdd() {
+    document.getElementById("add-person").classList.remove("hidden");
+    document.getElementById("show-add").classList.add("hidden");
+}
+
 window.onload = function(){
     this.displayPeople();
 
     let addBtn = document.getElementById("btn-add-person");
     addBtn.onclick = addPerson;
+
+    let showAddBtn = document.getElementById("show-add");
+    showAddBtn.onclick = showAdd;
 
     let editBtn = document.getElementById("btn-edit-person");
     editBtn.onclick = editPerson;
